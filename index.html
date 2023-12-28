@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="icon" href="resources/icon-SA.png" type="image/png" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope&family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img
+            class="header__logo"
+            src="resources/logo-SA (1).png"
+            alt="логотип орлов"
+          />
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a href="#projects" class="header__link">портфолио</a></li>
+              <li>
+                <a href="#competences" class="header__link">компетенции</a>
+              </li>
+              <li><a href="#services" class="header__link">УСЛУГИ</a></li>
+              <li><a href="#contacts" class="header__link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="burger-btn js-burger-btn"></div>
+        </div>
+        <div class="header__box">
+          <h1 class="header__title">
+            Привет, я Александр — фронтенд разработчик и дизайнер сайтов
+          </h1>
+          <p class="header__text">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют выделиться на фоне конкурентов
+          </p>
+        </div>
+      </div>
+      <div class="js-burger burger">
+        <div class="burger__content">
+          <img
+            class="burger__logo"
+            src="./resources/logo-burger.png"
+            alt="логотип Степоненко Александр"
+          />
+          <nav class="burger__nav">
+            <ul class="burger__menu">
+              <li><a href="#projects" class="burger__link">портфолио</a></li>
+              <li>
+                <a href="#competences" class="burger__link">компетенции</a>
+              </li>
+              <li><a href="#services" class="burger__link">УСЛУГИ</a></li>
+              <li><a href="#contacts" class="burger__link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="burger__container">
+            <p class="burger__text">для связи:</p>
+            <ul class="js-burger__content burger__contacts">
+              <li>
+                <a
+                  href="https://t.me/alexander_steponenko"
+                  class="burger__contacts-link"
+                  target="_blank"
+                  >telegram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:alexander.steponenko@yandex.ru"
+                  class="burger__contacts-link"
+                  >mail</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/alexander.steponenko"
+                  class="burger__contacts-link"
+                  >instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="projects__title">Самые свежие проекты</h2>
+          <ul class="projects__container">
+            <li class="projects__item">
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://alexandersteponenko.github.io/module2-Check4"
+                ><img
+                  src="./resources/METRIKA.png"
+                  class="projects__img"
+                  alt="Дизайн проекта METRIKA"
+                />
+                <p class="projects__subtitle">дизайн интерьера</p>
+                <h3 class="projects__name">Метрика</h3>
+                <p class="projects__description">верстка, настройка</p></a
+              >
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#!">
+                <img
+                  src="resources/Nothing .png"
+                  class="projects__img"
+                  alt="Дизайн проекта Nothing"
+                />
+                <p class="projects__subtitle">презентация продукта</p>
+                <h3 class="projects__name">Nothing</h3>
+                <p class="projects__description">верстка, настройка</p>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#!">
+                <img
+                  src="resources/TOPTRIP.png"
+                  class="projects__img"
+                  alt="Дизайн проекта TOPTRIP"
+                />
+                <p class="projects__subtitle">заказ путешествий</p>
+                <h3 class="projects__name">TOPTRIP</h3>
+                <p class="projects__description">верстка</p>
+              </a>
+            </li>
+          </ul>
+          <a class="projects__btn" href="#!">Смотреть все проекты</a>
+        </div>
+      </section>
+      <section id="competences" class="competences">
+        <div class="container">
+          <h2 class="competences__title">Мои компетенции</h2>
+          <ul class="competence__list">
+            <li class="competence__item">
+              <img
+                src="resources/file-html.png"
+                class="competence__icon"
+                alt="зеленая иконка html"
+              />
+              <h3 class="competence__title">HTML и CSS</h3>
+              <p class="competence__text">
+                это основа фронтенд разработки. Умение создавать и правильно
+                структурировать HTML-документы, а также применять стили к этим
+                документам на CSS, является обязательным навыком для каждого
+                фронтенд разработчика.
+              </p>
+            </li>
+            <li class="competence__item">
+              <img
+                src="resources/file-js.png"
+                class="competence__icon"
+                alt="зеленая иконка js"
+              />
+              <h3 class="competence__title">JavaScript</h3>
+              <p class="competence__text">
+                это язык программирования, который используется для создания
+                динамического и интерактивного пользовательского интерфейса.
+                Хороший фронтенд разработчик должен быть знаком с основами
+                JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                и манипуляцией данными на стороне клиента.
+              </p>
+            </li>
+            <li class="competence__item">
+              <img
+                src="resources/file-phone.png"
+                class="competence__icon"
+                alt="зеленая иконка телефон"
+              />
+              <h3 class="competence__title competence__down">
+                Работа с библиотеками и фреймворками
+              </h3>
+              <p class="competence__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+            <li class="competence__item">
+              <img
+                src="resources/file-react.png"
+                class="competence__icon"
+                alt="зеленая иконка react"
+              />
+              <h3 class="competence__title">
+                Разработка для мобильных устройств и адаптивная верстка
+              </h3>
+              <p class="competence__text">
+                Адаптивная вёрстка сайта — это способ обеспечить оптимальное
+                отображение интерфейсов на устройствах с разным разрешением
+                экранов. Вёрсткой занимается фронтенд-разработчик. Адаптивный
+                дизайн предусматривает, что пользователь будет взаимодействовать
+                с кнопками, текстом, изображениями через разные устройства.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="services__title">
+            Помогаю реализовать широкий спектр задач
+          </h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__box">
+                <img
+                  class="services__img"
+                  src="resources/services.png"
+                  alt="картинка сайта"
+                />
+              </div>
+              <div class="services__wrapper">
+                <h3 class="services__subtitle">Разработка сайта под ключ</h3>
+                <p class="services__text">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач Сайты должны быть
+                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                  пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="services__box">
+                <img
+                  class="services__img"
+                  src="resources/layout.png"
+                  alt="картинка сайта верстки"
+                />
+              </div>
+              <div class="services__wrapper">
+                <h3 class="services__subtitle">Верстка сайтов</h3>
+                <p class="services__text">
+                  Это процесс создания HTML-документов и применения к ним стилей
+                  на CSS. Фронтенд разработчик может помочь создать
+                  привлекательный и удобный интерфейс для вашего сайта
+                </p>
+              </div>
+            </li>
+            <li class="services__item">
+              <div class="services__box">
+                <img
+                  class="services__img"
+                  src="resources/mobil.png"
+                  alt="Разработка мобильного интерфейса"
+                />
+              </div>
+              <div class="services__wrapper">
+                <h3 class="services__subtitle">
+                  Разработка мобильного интерфейса
+                </h3>
+                <p class="services__text">
+                  Это процесс создания интерактивных элементов на странице с
+                  помощью JavaScript. Фронтенд разработчик может помочь создать
+                  динамический и удобный пользовательский интерфейс для вашего
+                  сайта или приложения.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <img
+          class="contacts__img"
+          src="resources/cuate.png"
+          alt="картинка с изображением разработчика"
+        />
+        <div class="container">
+          <div class="contacts__container">
+            <h2 class="contacts__title">
+              Для связи со мной заполните простую форму
+            </h2>
+            <form>
+              <ul class="contacts__form">
+                <li>
+                  <input
+                    class="contacts__input"
+                    type="text"
+                    name="name"
+                    placeholder="Имя Фамилия"
+                  />
+                </li>
+                <li>
+                  <input
+                    class="contacts__input"
+                    type="email"
+                    name="email"
+                    placeholder="example@mail.com"
+                  />
+                </li>
+              </ul>
+              <button type="submit" class="contacts__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <a href="index.html" class="footer__btn"
+            >Портфолио фронтенд-разработчика Александра Степоненко</a
+          >
+          <ul class="footer__contacts">
+            <li>
+              <a
+                href="mailto:alexander.steponenko@yandex.ru"
+                class="footer__link"
+                >mail</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://t.me/alexander_steponenko"
+                class="footer__link"
+                target="_blank"
+                >telegram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/alexander.steponenko"
+                class="footer__link"
+                >instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__container">
+          <p class="footer__text">Все права защищены. 2023</p>
+          <p class="footer__text">политика обработки данных</p>
+        </div>
+      </div>
+    </footer>
+    <script src="burger.js"></script>
+  </body>
+</html>

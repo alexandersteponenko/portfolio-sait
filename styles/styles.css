@@ -1,0 +1,63 @@
+@import "./header.css";
+@import "./burger.css";
+@import "./projects.css";
+@import "./competences.css";
+@import "./services.css";
+@import "./contacts.css";
+@import "./footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  background: #000;
+}
+.body_fixed {
+  overflow: hidden;
+}
+section {
+  margin-bottom: 150px;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 961px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.header__text,
+.header__link,
+.projects__title,
+.projects__name,
+.projects__description,
+.competences__title,
+.competence__text,
+.services__title,
+.services__text,
+.contacts__title,
+.contacts__input {
+  color: #fff;
+}
+.header__title,
+.competence__title,
+.services__subtitle {
+  color: #1bff07;
+}

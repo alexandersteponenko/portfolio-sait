@@ -1,0 +1,110 @@
+.burger-btn {
+  display: none;
+  position: absolute;
+  background: url(../resources/btn-burger.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.burger {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+.burger__content {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #000;
+  padding: 55px 30px;
+  transition: transform 0.5s linear;
+  transform: translateX(100%);
+  border: 1px solid #1bff07;
+  border-radius: 30px 0 0 30px;
+}
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+.burger__logo {
+  width: 180px;
+  height: 100px;
+  margin-bottom: 37px;
+}
+.burger__nav {
+  margin-bottom: 90px;
+}
+.burger__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.burger__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  opacity: 0.5;
+  color: #fff;
+}
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.burger__link {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.burger__link:hover {
+  opacity: 0.5;
+}
+.burger__contacts-link {
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 961px) {
+  .burger-btn {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 20px;
+    right: 5px;
+    width: 63px;
+    height: 63px;
+  }
+  .burger-btn_open {
+    width: 34px;
+    height: 34px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: url(../resources/btn-close.png);
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .burger__content {
+    width: 100%;
+  }
+}
